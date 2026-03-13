@@ -18,6 +18,8 @@ def calculate_fibonacci(n: int) -> int:
     Returns:
         int: Returns the nth Fibonacci number
     """
+    if n < 0:
+        raise ValueError("the integer must be greater than or equal to 0")
     first = 0
     second = 1
     i = 0
